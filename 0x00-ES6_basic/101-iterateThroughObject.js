@@ -1,7 +1,14 @@
+/* eslint-disable */
 export default function iterateThroughObject(reportWithIterator) {
-  let result = "";
-  for (let employee of reportWithIterator) {
-    result += `${employee} | `;
+  let employeeNameInString = "",
+    i = 0;
+  for (const singleEmployee of reportWithIterator) {
+    if (reportWithIterator.length - 1 == i) {
+      employeeNameInString += singleEmployee;
+    } else {
+      employeeNameInString += singleEmployee + " | ";
+    }
+    i++;
   }
-  return result.slice(0, -3);
+  return employeeNameInString;
 }
