@@ -1,4 +1,3 @@
-/* eslint-disable */
 const cleanSet = (set, startString) => {
 
   if (!startString || !startString.trim()) {
