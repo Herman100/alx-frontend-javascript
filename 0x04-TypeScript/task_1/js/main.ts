@@ -16,3 +16,23 @@ const teacher3: Teacher = {
 };
 
 console.log(teacher3);
+
+
+interface Directors {
+  readonly firstName: string;
+  readonly lastName: string;
+  fullTimeEmployee: boolean;
+  yearsOfExperience?: number;
+  location: string;
+  numberOfReports: number;
+  [propName: string]: any;
+}
+
+const director1: Directors = {
+  firstName: 'John',
+  lastName: 'Doe',
+  location: 'London',
+  fullTimeEmployee: true,
+  numberOfReports: 17,
+};
+console.log(director1);
